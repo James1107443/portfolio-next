@@ -68,7 +68,7 @@ export const heroData: Hero = {
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
         I'm a <strong className="text-stone-100">Full Stack Software Engineer</strong>, currently working
-        at <strong className="text-stone-100">Instant Domains</strong> as a senior full-stack developer, with over
+        as a Senior Freelance Web Developer, with over
         10 years of experience building scalable web applications and leading cross-functional teams.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
@@ -81,7 +81,7 @@ export const heroData: Hero = {
   ),
   actions: [
     {
-      href: '/assets/resume.pdf',
+      href: '../images/portfolio/portfolio-1.jpg',
       text: 'Resume',
       primary: true,
       Icon: ArrowDownTrayIcon,
@@ -122,6 +122,14 @@ export const skills: SkillGroup[] = [
       {
         name: 'English',
         level: 10,
+      },
+      {
+        name: 'French',
+        level: 8,
+      },
+      {
+        name: 'Spainish',
+        level: 4,
       },
     ],
   },
@@ -203,7 +211,7 @@ export const portfolioItems: PortfolioItem[] = [
   {
     title: 'LearnPro (Online Learning Platform)',
     description: 'Developed a custom e-learning platform where students could enroll in courses, watch videos, and complete quizzes. Built using Django and PostgreSQL on the backend, and React on the frontend. Integrated authentication, progress tracking, and a dashboard for instructors. Debugged numerous UI inconsistencies and optimized database queries for faster performance.',
-    url: 'https://reactresume.com',
+    url: 'https://learnpro.com',
     image: porfolioImage4,
   },
   {
@@ -215,9 +223,7 @@ export const portfolioItems: PortfolioItem[] = [
 
 ];
 
-/**
- * Resume section -- TODO: Standardize resume contact format or offer MDX
- */
+
 export const education: TimelineItem[] = [
   {
     date: 'April 2014',
@@ -312,9 +318,9 @@ export const contact: ContactSection = {
  * Social items
  */
 export const socialLinks: Social[] = [
-  { label: 'Github', Icon: GithubIcon, href: 'https://github.com/tbakerx' },
-  { label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/8553186/tim-baker' },
-  { label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/timbakerx/' },
-  { label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/reactresume/' },
-  { label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/TimBakerx' },
+  { label: 'Github', Icon: GithubIcon, href: 'https://github.com/James1107443' },
+  { label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/James1107443' },
+  { label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/James1107443/' },
+  { label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/James1107443/' },
+  { label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/James1107443' },
 ];
