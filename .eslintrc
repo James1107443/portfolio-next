@@ -4,10 +4,10 @@
   "parserOptions": {
     "ecmaFeatures": {
       "jsx": true
-    },
+   },
     "ecmaVersion": 2020,
     "sourceType": "module"
-  },
+ },
   "plugins": ["@typescript-eslint", "simple-import-sort", "import", "react", "react-memo", "react-hooks"],
   "extends": [
     "eslint:recommended",
@@ -30,7 +30,7 @@
       {
         "interfaces": ["signature", "method", "constructor", "field"],
         "typeLiterals": ["signature", "method", "constructor", "field"]
-      }
+     }
     ],
     "import/first": "error",
     "import/newline-after-import": "error",
@@ -50,25 +50,25 @@
     "jsx-a11y/no-onchange": "off",
     "jsx-a11y/no-autofocus": "off",
     "@next/next/no-img-element": "off"
-  },
+ },
   "settings": {
     "react": {
       "pragma": "React",
       "version": "detect"
-    }
-  },
+   }
+ },
   "overrides": [
     {
       "files": ["**/*.tsx"],
       "rules": {
         "react/prop-types": "off"
-      }
-    },
+     }
+   },
     {
       "files": ["**/*.js"],
       "rules": {
         "@typescript-eslint/no-var-requires": "off"
-      }
-    }
+     }
+   }
   ]
 }

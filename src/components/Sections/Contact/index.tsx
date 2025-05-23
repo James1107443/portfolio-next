@@ -58,7 +58,7 @@ const Contact: FC = memo(() => {
                     </dd>
                   </div>
                 );
-              })}
+             })}
             </dl>
           </div>
         </div>

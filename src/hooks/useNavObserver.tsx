@@ -25,11 +25,11 @@ export const useNavObserver = (selectors: string, handler: (section: SectionId |
               currentRatio: entry.intersectionRatio,
               aboveToc: currentY < headerWrapper.getBoundingClientRect().y,
               belowToc: !(currentY < headerWrapper.getBoundingClientRect().y),
-            };
+           };
             if (decision.isIntersecting) {
               // Header at 30% from the top, update to current header
               handler(decision.id as SectionId);
-            } else if (
+           } else if (
               !decision.isIntersecting &&
               decision.currentRatio < 1 &&
               decision.currentRatio > 0 &&
@@ -37,24 +37,24 @@ export const useNavObserver = (selectors: string, handler: (section: SectionId |
             ) {
               const currentVisible = headingsArray[decision.currentIndex - 1]?.getAttribute('id');
               handler(currentVisible as SectionId);
-            }
-          }
-        });
-      },
+           }
+         }
+       });
+     },
       {
         root: null,
         threshold: 0.1,
         rootMargin: '0px 0px -70% 0px',
-      },
+     },
     );
     // Observe all the Sections
     headings.forEach(section => {
       observer.observe(section);
-    });
+   });
     // Cleanup
     return () => {
       observer.disconnect();
-    };
+   };
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []); // Dependency here is the post content.
+ }, []); // Dependency here is the post content.
 };

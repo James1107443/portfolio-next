@@ -24,50 +24,50 @@ const Testimonials: FC = memo(() => {
   const resolveSrc = useMemo(() => {
     if (!imageSrc) return undefined;
     return typeof imageSrc === 'string' ? imageSrc : imageSrc.src;
-  }, [imageSrc]);
+ }, [imageSrc]);
 
   // Mobile iOS doesn't allow background-fixed elements
   useEffect(() => {
     setParallaxEnabled(!(isMobile && isApple));
-  }, []);
+ }, []);
 
   useEffect(() => {
     itemWidth.current = scrollContainer.current ? scrollContainer.current.offsetWidth : 0;
-  }, [width]);
+ }, [width]);
 
   useEffect(() => {
     if (scrollContainer.current) {
       const newIndex = Math.round(scrollContainer.current.scrollLeft / itemWidth.current);
       setActiveIndex(newIndex);
-    }
-  }, [itemWidth, scrollValue]);
+   }
+ }, [itemWidth, scrollValue]);
 
   const setTestimonial = useCallback(
     (index: number) => () => {
       if (scrollContainer !== null && scrollContainer.current !== null) {
         scrollContainer.current.scrollLeft = itemWidth.current * index;
-      }
-    },
+     }
+   },
     [],
   );
   const next = useCallback(() => {
     if (activeIndex + 1 === testimonials.length) {
       setTestimonial(0)();
-    } else {
+   } else {
       setTestimonial(activeIndex + 1)();
-    }
-  }, [activeIndex, setTestimonial, testimonials.length]);
+   }
+ }, [activeIndex, setTestimonial, testimonials.length]);
 
   const handleScroll = useCallback<UIEventHandler<HTMLDivElement>>(event => {
     setScrollValue(event.currentTarget.scrollLeft);
-  }, []);
+ }, []);
 
   useInterval(next, 10000);
 
   // If no testimonials, don't render the section
   if (!testimonials.length) {
     return null;
-  }
+ }
 
   return (
     <Section noPadding sectionId={SectionId.Testimonials}>
@@ -89,7 +89,7 @@ const Testimonials: FC = memo(() => {
                 return (
                   <Testimonial isActive={isActive} key={`${testimonial.name}-${index}`} testimonial={testimonial} />
                 );
-              })}
+             })}
             </div>
             <div className="flex gap-x-4">
               {[...Array(testimonials.length)].map((_, index) => {
@@ -104,7 +104,7 @@ const Testimonials: FC = memo(() => {
                     key={`select-button-${index}`}
                     onClick={setTestimonial(index)}></button>
                 );
-              })}
+             })}
             </div>
           </div>
         </div>
