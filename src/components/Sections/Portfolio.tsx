@@ -28,7 +28,7 @@ const Portfolio: FC = memo(() => {
                 </div>
               </div>
             );
-         })}
+        })}
         </div>
       </div>
     </Section>
@@ -47,8 +47,8 @@ const ItemOverlay: FC<{item: PortfolioItem}> = memo(({item: {url, title, descrip
     // Avoid hydration styling errors by setting mobile in useEffect
     if (isMobile) {
       setMobile(true);
-   }
- }, []);
+  }
+}, []);
   useDetectOutsideClick(linkRef, () => setShowOverlay(false));
 
   const handleItemClick = useCallback(
@@ -56,8 +56,8 @@ const ItemOverlay: FC<{item: PortfolioItem}> = memo(({item: {url, title, descrip
       if (mobile && !showOverlay) {
         event.preventDefault();
         setShowOverlay(!showOverlay);
-     }
-   },
+    }
+  },
     [mobile, showOverlay],
   );
 

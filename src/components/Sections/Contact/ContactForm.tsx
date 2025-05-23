@@ -12,7 +12,7 @@ const ContactForm: FC = memo(() => {
       name: '',
       email: '',
       message: '',
-   }),
+  }),
     [],
   );
 
@@ -25,7 +25,7 @@ const ContactForm: FC = memo(() => {
       const fieldData: Partial<FormData> = {[name]: value};
 
       setData({...data, ...fieldData});
-   },
+  },
     [data],
   );
 
@@ -36,7 +36,7 @@ const ContactForm: FC = memo(() => {
        * This is a good starting point to wire up your form submission logic
        * */
       console.log('Data to send: ', data);
-   },
+  },
     [data],
   );
 

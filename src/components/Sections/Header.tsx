@@ -18,7 +18,7 @@ const Header: FC = memo(() => {
 
   const intersectionHandler = useCallback((section: SectionId | null) => {
     section && setCurrentSection(section);
- }, []);
+}, []);
 
   useNavObserver(navSections.map(section => `#${section}`).join(','), intersectionHandler);
 
@@ -51,7 +51,7 @@ const DesktopNav: FC<{navSections: SectionId[]; currentSection: SectionId | null
         </nav>
       </header>
     );
- },
+},
 );
 
 const MobileNav: FC<{navSections: SectionId[]; currentSection: SectionId | null}> = memo(
@@ -60,7 +60,7 @@ const MobileNav: FC<{navSections: SectionId[]; currentSection: SectionId | null}
 
     const toggleOpen = useCallback(() => {
       setIsOpen(!isOpen);
-   }, [isOpen]);
+  }, [isOpen]);
 
     const baseClass =
       'p-2 rounded-md first-letter:uppercase transition-colors duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-500';
@@ -114,7 +114,7 @@ const MobileNav: FC<{navSections: SectionId[]; currentSection: SectionId | null}
         </Transition.Root>
       </>
     );
- },
+},
 );
 
 const NavItem: FC<{

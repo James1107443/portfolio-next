@@ -5,17 +5,17 @@ function useInterval(callback: () => void, delay: number | null) {
 
   useEffect(() => {
     savedCallback.current = callback;
- }, [callback]);
+}, [callback]);
 
   useEffect(() => {
     if (!delay && delay !== 0) {
       return;
-   }
+  }
 
     const id = setInterval(() => savedCallback.current(), delay);
 
     return () => clearInterval(id);
- }, [delay]);
+}, [delay]);
 }
 
 export default useInterval;
