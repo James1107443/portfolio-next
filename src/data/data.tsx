@@ -86,12 +86,12 @@ export const heroData: Hero = {
       text: 'Resume',
       primary: true,
       Icon: ArrowDownTrayIcon,
-    },
+   },
     {
       href: `#${SectionId.Contact}`,
       text: 'Contact',
       primary: false,
-    },
+   },
   ],
 };
 
@@ -104,12 +104,12 @@ export const aboutData: About = {
    the stack—from intuitive frontend interfaces to robust backend systems. I'm most comfortable with technologies like React, Node.js, 
   TypeScript, and AWS. I'm passionate about clean architecture, performance optimization, and mentoring teams.`,
   aboutItems: [
-    { label: 'Location', text: 'Singapore', Icon: MapIcon },
-    { label: 'Age', text: '33', Icon: CalendarIcon },
-    { label: 'Nationality', text: 'Singaporean', Icon: FlagIcon },
-    { label: 'Interests', text: 'football,  mentoring', Icon: SparklesIcon },
-    { label: 'Study', text: 'Singapore Institute of Technology (SIT)', Icon: AcademicCapIcon },
-    { label: 'Employment', text: 'Self-Employed', Icon: BuildingOffice2Icon },
+    {label: 'Location', text: 'Singapore', Icon: MapIcon},
+    {label: 'Age', text: '33', Icon: CalendarIcon},
+    {label: 'Nationality', text: 'Singaporean', Icon: FlagIcon},
+    {label: 'Interests', text: 'football,  mentoring', Icon: SparklesIcon},
+    {label: 'Study', text: 'Singapore Institute of Technology (SIT)', Icon: AcademicCapIcon},
+    {label: 'Employment', text: 'Self-Employed', Icon: BuildingOffice2Icon},
   ],
 };
 
@@ -123,68 +123,68 @@ export const skills: SkillGroup[] = [
   //     {
   //       name: 'English',
   //       level: 10,
-  //     },
+  //    },
   //     {
   //       name: 'French',
   //       level: 8,
-  //     },
+  //    },
   //     {
   //       name: 'Spainish',
   //       level: 4,
-  //     },
+  //    },
   //   ],
-  // },
+  //},
   {
     name: 'Frontend development',
     skills: [
       {
         name: 'React',
         level: 9,
-      },
+     },
       {
         name: 'Typescript',
         level: 7,
-      },
+     },
       {
         name: 'GraphQL',
         level: 6,
-      },
+     },
     ],
-  },
+ },
   {
     name: 'Backend development',
     skills: [
       {
         name: 'Node.js',
         level: 8,
-      },
+     },
       {
         name: 'Rust',
         level: 5,
-      },
+     },
       {
         name: 'Golang',
         level: 4,
-      },
+     },
     ],
-  },
+ },
   {
     name: 'Mobile development',
     skills: [
       {
         name: 'React Native',
         level: 9,
-      },
+     },
       {
         name: 'Flutter',
         level: 4,
-      },
+     },
       {
         name: 'Swift',
         level: 3,
-      },
+     },
     ],
-  },
+ },
 ];
 
 /**
@@ -196,31 +196,31 @@ export const portfolioItems: PortfolioItem[] = [
     description: 'Developed a fully responsive e-commerce web application using Laravel (backend) and Vue.js (frontend). Integrated Stripe for secure payments, dynamic product filtering, a real-time inventory system, and admin dashboard with role-based access. Fixed over 100+ reported bugs during launch and implemented logging and analytics for continuous monitoring.',
     url: 'https://shopsmart.example.com',
     image: porfolioImage1,
-  },
+ },
   {
     title: 'InsightTrack (Business Dashboard App)',
     description: 'Built a custom analytics dashboard for a mid-sized logistics company. Used React, Chart.js, and Node.js to create interactive data visualizations and real-time metrics tracking. Focused on performance optimization and handled critical bug fixes post-deployment that improved load speed by 45%.',
     url: 'https://insighttrack.example.com',
     image: porfolioImage2,
-  },
+ },
   {
     title: ' FormGuard (Secure Form System)',
     description: 'Designed a form submission platform for HR departments to securely collect employee data. Developed with Node.js, Express, and MongoDB, with built-in validation, CAPTCHA, and file upload support.Applied strong input sanitization to prevent XSS and injection attacks.',
     url: 'https://learnpro.example.com',
     image: porfolioImage3,
-  },
+ },
   {
     title: 'LearnPro (Online Learning Platform)',
     description: 'Developed a custom e-learning platform where students could enroll in courses, watch videos, and complete quizzes. Built using Django and PostgreSQL on the backend, and React on the frontend. Integrated authentication, progress tracking, and a dashboard for instructors. Debugged numerous UI inconsistencies and optimized database queries for faster performance.',
     url: 'https://learnpro.com',
     image: porfolioImage4,
-  },
+ },
   {
     title: 'ChatBridge (Real-Time Messaging App)',
     description: 'Created a real-time messaging platform for internal company use using Node.js, Socket.io, and Redis. Features included group chats, read receipts, typing indicators, and encrypted message storage. Diagnosed and resolved WebSocket connection drops in production under load.',
     url: 'https://chatbridge.example.com',
     image: porfolioImage5,
-  },
+ },
 
 ];
 
@@ -233,7 +233,7 @@ export const education: TimelineItem[] = [
     content: <p>During my time at Singapore Institute of Technology (SIT), I focused on
       computer science and web development, gaining a solid foundation in both theory and hands-on practice. I learned key programming concepts such as data structures,
       algorithms, object-oriented programming, and database design.</p>,
-  },
+ },
 ];
 
 export const experience: TimelineItem[] = [
@@ -247,7 +247,7 @@ export const experience: TimelineItem[] = [
         with GitHub Actions and Docker to speed up deployment processes.
       </p>
     ),
-  },
+ },
   {
     date: 'September 2021 - March 2023',
     location: 'Visual Edge IT',
@@ -257,7 +257,7 @@ export const experience: TimelineItem[] = [
         I use tools like logging, error tracking (e.g., Sentry), and version control to pinpoint and fix bugs fast and clean.
       </p>
     ),
-  },
+ },
   {
     date: 'April 2018 - September 2021',
     location: 'Bytewave Technologies',
@@ -267,7 +267,7 @@ export const experience: TimelineItem[] = [
         Collaborated with a small Singapore-based IT firm on multiple web projects for SME clients in logistics and healthcare.
       </p>
     ),
-  },
+ },
 ];
 
 /**
@@ -280,17 +280,17 @@ export const testimonial: TestimonialSection = {
       name: 'John Michael',
       text: 'James Coulter helped us design and launch a fully responsive e-commerce platform that increased our online sales by over 40%. They were clear in communication, delivered on time, and made smart technical decisions that kept us under budget. I’ve worked with many developers — few are as professional, skilled, and easy to work with as them.',
       image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/169.jpg',
-    },
+   },
     {
       name: 'Adrian Madrid',
       text: "James Coulter is one of the most dependable and skilled web developers I’ve worked with in my career. Their 10+ years of experience really shows — whether it's building responsive UIs, optimizing performance, or solving tricky backend issues, they get it done right and on time.",
       image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/14.jpg',
-    },
+   },
     {
       name: 'Marketing Director, E-commerce Brand',
       text: 'James Coulter helped us redesign our entire site from the ground up. Their mix of frontend design sensitivity and backend logic was exactly what we needed. The project launched early and exceeded expectations — we saw a 35% increase in engagement within the first month.',
       image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/69.jpg',
-    },
+   },
   ],
 };
 
@@ -306,12 +306,12 @@ export const contact: ContactSection = {
       type: ContactType.Email,
       text: 'jc1107443@gmail.com',
       // href: 'mailto:reachout@timbaker.me',
-    },
+   },
     // {
     //   type: ContactType.Location,
     //   text: ' Abilene Texax, US',
     //   // href: 'https://www.google.ca/maps/place/Victoria,+BC/@48.4262362,-123.376775,14z',
-    // },
+    //},
     // {
     //   type: ContactType.Instagram,
     //   text: '@tbakerx',
@@ -321,7 +321,7 @@ export const contact: ContactSection = {
       type: ContactType.Github,
       text: 'James1107443',
       href: 'https://github.com/James1107443',
-    },
+   },
   ],
 };
 
@@ -329,9 +329,9 @@ export const contact: ContactSection = {
  * Social items
  */
 export const socialLinks: Social[] = [
-  { label: 'Github', Icon: GithubIcon, href: 'https://github.com/James1107443' },
-  { label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/James1107443' },
-  { label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/James1107443/' },
-  { label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/James1107443/' },
-  { label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/James1107443' },
+  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/James1107443'},
+  {label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/James1107443'},
+  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/James1107443/'},
+  {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/James1107443/'},
+  {label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/James1107443'},
 ];

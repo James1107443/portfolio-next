@@ -60,7 +60,7 @@ const MobileNav: FC<{navSections: SectionId[]; currentSection: SectionId | null}
 
     const toggleOpen = useCallback(() => {
       setIsOpen(!isOpen);
-  }, [isOpen]);
+ }, [isOpen]);
 
     const baseClass =
       'p-2 rounded-md first-letter:uppercase transition-colors duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-500';

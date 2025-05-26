@@ -10,7 +10,7 @@ module.exports = {
       true,
       {
         ignoreAtRules: ['tailwind'],
-    },
+   },
     ],
 },
 };
