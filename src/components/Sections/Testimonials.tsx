@@ -39,23 +39,23 @@ const Testimonials: FC = memo(() => {
     if (scrollContainer.current) {
       const newIndex = Math.round(scrollContainer.current.scrollLeft / itemWidth.current);
       setActiveIndex(newIndex);
- }
+}
 }, [itemWidth, scrollValue]);
 
   const setTestimonial = useCallback(
     (index: number) => () => {
       if (scrollContainer !== null && scrollContainer.current !== null) {
         scrollContainer.current.scrollLeft = itemWidth.current * index;
-   }
- },
+}
+},
     [],
   );
   const next = useCallback(() => {
     if (activeIndex + 1 === testimonials.length) {
       setTestimonial(0)();
- } else {
+} else {
       setTestimonial(activeIndex + 1)();
- }
+}
 }, [activeIndex, setTestimonial, testimonials.length]);
 
   const handleScroll = useCallback<UIEventHandler<HTMLDivElement>>(event => {
@@ -89,7 +89,7 @@ const Testimonials: FC = memo(() => {
                 return (
                   <Testimonial isActive={isActive} key={`${testimonial.name}-${index}`} testimonial={testimonial} />
                 );
-           })}
+        })}
             </div>
             <div className="flex gap-x-4">
               {[...Array(testimonials.length)].map((_, index) => {
@@ -104,7 +104,7 @@ const Testimonials: FC = memo(() => {
                     key={`select-button-${index}`}
                     onClick={setTestimonial(index)}></button>
                 );
-           })}
+        })}
             </div>
           </div>
         </div>

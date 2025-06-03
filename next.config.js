@@ -11,7 +11,7 @@ const nextConfig = {
     tsRules.forEach(rule => {
       // eslint-disable-next-line no-param-reassign
       rule.include = undefined;
- });
+});
 
     return config;
 },
@@ -28,10 +28,10 @@ const nextConfig = {
       {
         protocol: 'https',
         hostname: 'images.unsplash.com',
-   },{
+},{
         protocol: 'https',
         hostname: 'source.unsplash.com',
-   },
+},
     ],
 },
 };

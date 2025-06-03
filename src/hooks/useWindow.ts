@@ -15,7 +15,7 @@ const useWindow = (): WindowSize => {
     setWindowSize({
       width: window.innerWidth,
       height: window.innerHeight,
- });
+});
 };
 
   // Set size at the first client-side load
