@@ -82,12 +82,12 @@ export const heroData: Hero = {
       text: 'Resume',
       primary: true,
       Icon: ArrowDownTrayIcon,
- },
+},
     {
       href: `#${SectionId.Contact}`,
       text: 'Contact',
       primary: false,
- },
+},
   ],
 };
 
@@ -118,15 +118,15 @@ export const skills: SkillGroup[] = [
       {
         name: 'React',
         level: 9,
-   },
+  },
       {
         name: 'Typescript',
         level: 7,
-   },
+  },
       {
         name: 'GraphQL',
         level: 6,
-   },
+  },
     ],
 },
   {
@@ -135,15 +135,15 @@ export const skills: SkillGroup[] = [
       {
         name: 'Node.js',
         level: 8,
-   },
+  },
       {
         name: 'Rust',
         level: 5,
-   },
+  },
       {
         name: 'Golang',
         level: 4,
-   },
+  },
     ],
 },
   {
@@ -152,15 +152,15 @@ export const skills: SkillGroup[] = [
       {
         name: 'MySQL',
         level: 10,
-   },
+  },
       {
         name: 'MongoDB',
         level: 10,
-   },
+  },
       {
         name: 'PostgreSQL',
         level: 9,
-   },
+  },
     ],
 },
 ];
@@ -242,17 +242,17 @@ export const testimonial: TestimonialSection = {
       name: 'John Michael',
       text: 'James Coulter helped us design and launch a fully responsive e-commerce platform that increased our online sales by over 40%. They were clear in communication, delivered on time, and made smart technical decisions that kept us under budget. I’ve worked with many developers — few are as professional, skilled, and easy to work with as them.',
       image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/169.jpg',
- },
+},
     {
       name: 'Adrian Madrid',
       text: "James Coulter is one of the most dependable and skilled web developers I’ve worked with in my career. Their 10+ years of experience really shows — whether it's building responsive UIs, optimizing performance, or solving tricky backend issues, they get it done right and on time.",
       image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/14.jpg',
- },
+},
     {
       name: 'Marketing Director, E-commerce Brand',
       text: 'James Coulter helped us redesign our entire site from the ground up. Their mix of frontend design sensitivity and backend logic was exactly what we needed. The project launched early and exceeded expectations — we saw a 35% increase in engagement within the first month.',
       image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/69.jpg',
- },
+},
   ],
 };
 
@@ -268,12 +268,12 @@ export const contact: ContactSection = {
       type: ContactType.Email,
       text: 'jc1107443@gmail.com',
       // href: 'mailto:reachout@timbaker.me',
- },
+},
     {
       type: ContactType.Github,
       text: 'James1107443',
       href: 'https://github.com/James1107443',
- },
+},
   ],
 };
 

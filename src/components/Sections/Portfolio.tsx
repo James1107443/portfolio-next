@@ -18,17 +18,17 @@ const Portfolio: FC = memo(() => {
           {portfolioItems.map((item, index) => {
             const {title, image} = item;
             return (
-              <div className="m-4"  key={`${title}-${index}`}>
+              <div className="m-4" key={`${title}-${index}`}>
                 <div
                   className={classNames(
                     'relative h-max w-full overflow-hidden rounded-lg shadow-lg shadow-black/30 lg:shadow-xl',
                   )}>
-                  <Image alt={title} className="h-full w-full flex justify-between" placeholder="blur" src={image} style={{width:"600px",height:"220px"}} />
+                  <Image alt={title} className="h-full w-full flex justify-between w-[600px] h-[220px]" placeholder="blur" src={image} />
                   <ItemOverlay item={item} />
                 </div>
               </div>
             );
-       })}
+         })}
         </div>
       </div>
     </Section>
@@ -47,8 +47,8 @@ const ItemOverlay: FC<{item: PortfolioItem}> = memo(({item: {url, title, descrip
     // Avoid hydration styling errors by setting mobile in useEffect
     if (isMobile) {
       setMobile(true);
- }
-}, []);
+   }
+ }, []);
   useDetectOutsideClick(linkRef, () => setShowOverlay(false));
 
   const handleItemClick = useCallback(
@@ -56,8 +56,8 @@ const ItemOverlay: FC<{item: PortfolioItem}> = memo(({item: {url, title, descrip
       if (mobile && !showOverlay) {
         event.preventDefault();
         setShowOverlay(!showOverlay);
-   }
- },
+     }
+   },
     [mobile, showOverlay],
   );
 
