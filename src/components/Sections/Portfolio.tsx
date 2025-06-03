@@ -12,18 +12,20 @@ import Section from '../Layout/Section';
 const Portfolio: FC = memo(() => {
   return (
     <Section className="bg-neutral-800" sectionId={SectionId.Portfolio}>
-      <div className="flex flex-col gap-y-2">
+      <div className="flex flex-col">
         <h2 className="self-center text-xl font-bold text-white">Check out some of my work</h2>
-        <div className="flex justify-centerw-full columns-4 md:columns-4 lg:columns-4">
+        <div className="justify-centerw-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-1 ">
           {portfolioItems.map((item, index) => {
             const {title, image} = item;
             return (
               <div className="m-4" key={`${title}-${index}`}>
                 <div
                   className={classNames(
-                    'relative h-max w-full overflow-hidden rounded-lg shadow-lg shadow-black/30 lg:shadow-xl',
+                    'flex relative h-max w-full overflow-hidden rounded-lg shadow-lg shadow-black/30 lg:shadow-xl',
                   )}>
-                  <Image alt={title} className="h-full w-full flex justify-between w-[600px] h-[220px]" placeholder="blur" src={image} />
+                  <div className="w-[600px] h-[210px] relative">
+                    <Image alt={title} className="w-full h-full object-cover"  placeholder="blur" src={image}  />
+                  </div>
                   <ItemOverlay item={item} />
                 </div>
               </div>

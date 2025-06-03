@@ -25,11 +25,11 @@ export const useNavObserver = (selectors: string, handler: (section: SectionId |
               currentRatio: entry.intersectionRatio,
               aboveToc: currentY < headerWrapper.getBoundingClientRect().y,
               belowToc: !(currentY < headerWrapper.getBoundingClientRect().y),
-     };
+  };
             if (decision.isIntersecting) {
               // Header at 30% from the top, update to current header
               handler(decision.id as SectionId);
-     } else if (
+  } else if (
               !decision.isIntersecting &&
               decision.currentRatio < 1 &&
               decision.currentRatio > 0 &&
@@ -37,9 +37,9 @@ export const useNavObserver = (selectors: string, handler: (section: SectionId |
             ) {
               const currentVisible = headingsArray[decision.currentIndex - 1]?.getAttribute('id');
               handler(currentVisible as SectionId);
-     }
-   }
- });
+  }
+}
+});
 },
       {
         root: null,

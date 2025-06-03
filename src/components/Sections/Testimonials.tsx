@@ -89,7 +89,7 @@ const Testimonials: FC = memo(() => {
                 return (
                   <Testimonial isActive={isActive} key={`${testimonial.name}-${index}`} testimonial={testimonial} />
                 );
-       })}
+    })}
             </div>
             <div className="flex gap-x-4">
               {[...Array(testimonials.length)].map((_, index) => {
@@ -104,7 +104,7 @@ const Testimonials: FC = memo(() => {
                     key={`select-button-${index}`}
                     onClick={setTestimonial(index)}></button>
                 );
-       })}
+    })}
             </div>
           </div>
         </div>

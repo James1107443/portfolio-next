@@ -118,15 +118,15 @@ export const skills: SkillGroup[] = [
       {
         name: 'React',
         level: 9,
-  },
+},
       {
         name: 'Typescript',
         level: 7,
-  },
+},
       {
         name: 'GraphQL',
         level: 6,
-  },
+},
     ],
 },
   {
@@ -135,15 +135,15 @@ export const skills: SkillGroup[] = [
       {
         name: 'Node.js',
         level: 8,
-  },
+},
       {
         name: 'Rust',
         level: 5,
-  },
+},
       {
         name: 'Golang',
         level: 4,
-  },
+},
     ],
 },
   {
@@ -152,15 +152,15 @@ export const skills: SkillGroup[] = [
       {
         name: 'MySQL',
         level: 10,
-  },
+},
       {
         name: 'MongoDB',
         level: 10,
-  },
+},
       {
         name: 'PostgreSQL',
         level: 9,
-  },
+},
     ],
 },
 ];
